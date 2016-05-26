@@ -1,0 +1,17 @@
+{
+  "name": "node-auth0-test-v0.8.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "auth0": "0.8.2",
+    "dotenv": "^2.0.0"
+  },
+  "author": "Vikas Jayaram",
+  "license": "ISC"
+
+}
