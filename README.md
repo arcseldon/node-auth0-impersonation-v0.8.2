@@ -27,18 +27,9 @@ What you will need?
 * Create a .env file in the project root directory.
 * Add the following lines to this file
 ```
-AUTH0_DOMAIN=myDomain
-AUTH0_GLOBAL_CLIENT_ID=myGlobalClientId
-AUTH0_GLOBAL_CLIENT_SECRET=myGlobalClientSecret
+AUTH0_DOMAIN=YOUR_DOMAIN.auth0.com
+AUTH0_GLOBAL_CLIENT_ID=YOUR_GLOBAL_CLIENT_ID
+AUTH0_GLOBAL_CLIENT_SECRET=YOUR_GLOBAL_CLIENT_ID
+AUTH0_CLIENT_ID=AUTH0_APPLICATION_CLIENT_ID 
 ```
-This global client id and secret is available on https://auth0.com/docs/api/v2 if you click on "API Key/Secret" near the token generator.
-
-Import and use the library
-```
-var dotenv = require('dotenv');
-var helpers = require('auth0-app-rule-mapping').Auth0Helpers;
-dotenv.load();
-helpers.appToRulesMapping(function (mapping) {
-    // do something.
-});
-```
+This global client id and secret is available on https://auth0.com/docs/api/v2 if you click on "API Key/Secret" near the token generator. This is also available in your auth0 dashboard under Accounts->Advanced.
